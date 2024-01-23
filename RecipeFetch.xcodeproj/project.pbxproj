@@ -14,6 +14,12 @@
 		F1FA2E9D2B5F63E400F094BF /* RecipeFetchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1FA2E9C2B5F63E400F094BF /* RecipeFetchTests.swift */; };
 		F1FA2EA72B5F63E500F094BF /* RecipeFetchUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1FA2EA62B5F63E500F094BF /* RecipeFetchUITests.swift */; };
 		F1FA2EA92B5F63E500F094BF /* RecipeFetchUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1FA2EA82B5F63E500F094BF /* RecipeFetchUITestsLaunchTests.swift */; };
+		F1FA2EB72B5F642E00F094BF /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = F1FA2EB62B5F642E00F094BF /* Alamofire */; };
+		F1FA2EBA2B5F643D00F094BF /* SDWebImageSwiftUI in Frameworks */ = {isa = PBXBuildFile; productRef = F1FA2EB92B5F643D00F094BF /* SDWebImageSwiftUI */; };
+		F1FA2EBC2B5F645F00F094BF /* Meal.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1FA2EBB2B5F645F00F094BF /* Meal.swift */; };
+		F1FA2EBE2B5F647900F094BF /* NetworkingManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1FA2EBD2B5F647900F094BF /* NetworkingManager.swift */; };
+		F1FA2EC02B5F649300F094BF /* DetailedRecipeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1FA2EBF2B5F649300F094BF /* DetailedRecipeView.swift */; };
+		F1FA2EC22B5F64A800F094BF /* RecipeHome.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1FA2EC12B5F64A800F094BF /* RecipeHome.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +50,10 @@
 		F1FA2EA22B5F63E500F094BF /* RecipeFetchUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RecipeFetchUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		F1FA2EA62B5F63E500F094BF /* RecipeFetchUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipeFetchUITests.swift; sourceTree = "<group>"; };
 		F1FA2EA82B5F63E500F094BF /* RecipeFetchUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipeFetchUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		F1FA2EBB2B5F645F00F094BF /* Meal.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Meal.swift; sourceTree = "<group>"; };
+		F1FA2EBD2B5F647900F094BF /* NetworkingManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkingManager.swift; sourceTree = "<group>"; };
+		F1FA2EBF2B5F649300F094BF /* DetailedRecipeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailedRecipeView.swift; sourceTree = "<group>"; };
+		F1FA2EC12B5F64A800F094BF /* RecipeHome.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipeHome.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,6 +61,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F1FA2EBA2B5F643D00F094BF /* SDWebImageSwiftUI in Frameworks */,
+				F1FA2EB72B5F642E00F094BF /* Alamofire in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -98,6 +110,10 @@
 				F1FA2E8D2B5F63DA00F094BF /* ContentView.swift */,
 				F1FA2E8F2B5F63E200F094BF /* Assets.xcassets */,
 				F1FA2E912B5F63E200F094BF /* Preview Content */,
+				F1FA2EBB2B5F645F00F094BF /* Meal.swift */,
+				F1FA2EBD2B5F647900F094BF /* NetworkingManager.swift */,
+				F1FA2EBF2B5F649300F094BF /* DetailedRecipeView.swift */,
+				F1FA2EC12B5F64A800F094BF /* RecipeHome.swift */,
 			);
 			path = RecipeFetch;
 			sourceTree = "<group>";
@@ -143,6 +159,10 @@
 			dependencies = (
 			);
 			name = RecipeFetch;
+			packageProductDependencies = (
+				F1FA2EB62B5F642E00F094BF /* Alamofire */,
+				F1FA2EB92B5F643D00F094BF /* SDWebImageSwiftUI */,
+			);
 			productName = RecipeFetch;
 			productReference = F1FA2E882B5F63DA00F094BF /* RecipeFetch.app */;
 			productType = "com.apple.product-type.application";
@@ -215,6 +235,10 @@
 				Base,
 			);
 			mainGroup = F1FA2E7F2B5F63DA00F094BF;
+			packageReferences = (
+				F1FA2EB52B5F642E00F094BF /* XCRemoteSwiftPackageReference "Alamofire" */,
+				F1FA2EB82B5F643D00F094BF /* XCRemoteSwiftPackageReference "SDWebImageSwiftUI" */,
+			);
 			productRefGroup = F1FA2E892B5F63DA00F094BF /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -258,6 +282,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				F1FA2E8E2B5F63DA00F094BF /* ContentView.swift in Sources */,
+				F1FA2EC02B5F649300F094BF /* DetailedRecipeView.swift in Sources */,
+				F1FA2EC22B5F64A800F094BF /* RecipeHome.swift in Sources */,
+				F1FA2EBE2B5F647900F094BF /* NetworkingManager.swift in Sources */,
+				F1FA2EBC2B5F645F00F094BF /* Meal.swift in Sources */,
 				F1FA2E8C2B5F63DA00F094BF /* RecipeFetchApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -588,6 +616,38 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		F1FA2EB52B5F642E00F094BF /* XCRemoteSwiftPackageReference "Alamofire" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Alamofire/Alamofire.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.8.1;
+			};
+		};
+		F1FA2EB82B5F643D00F094BF /* XCRemoteSwiftPackageReference "SDWebImageSwiftUI" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SDWebImage/SDWebImageSwiftUI.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 2.2.6;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		F1FA2EB62B5F642E00F094BF /* Alamofire */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = F1FA2EB52B5F642E00F094BF /* XCRemoteSwiftPackageReference "Alamofire" */;
+			productName = Alamofire;
+		};
+		F1FA2EB92B5F643D00F094BF /* SDWebImageSwiftUI */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = F1FA2EB82B5F643D00F094BF /* XCRemoteSwiftPackageReference "SDWebImageSwiftUI" */;
+			productName = SDWebImageSwiftUI;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = F1FA2E802B5F63DA00F094BF /* Project object */;
 }
