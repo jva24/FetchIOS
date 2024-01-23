@@ -1,17 +1,17 @@
 //
-//  RecipeFetchApp.swift
-//  RecipeFetch
+//  RecipeFetchOSApp.swift
+//  RecipeFetchOS
 //
-//  Created by Meto Ajagu on 1/22/24.
+//  Created by Meto Ajagu on 12/7/23.
 //
 
 import SwiftUI
 
 @main
-struct RecipeFetchApp: App {
+struct RecipeFetchOSApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            RecipeHome()
         }
     }
 }
