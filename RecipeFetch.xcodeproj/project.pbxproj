@@ -108,12 +108,12 @@
 			children = (
 				F1FA2E8B2B5F63DA00F094BF /* RecipeFetchApp.swift */,
 				F1FA2E8D2B5F63DA00F094BF /* ContentView.swift */,
-				F1FA2E8F2B5F63E200F094BF /* Assets.xcassets */,
-				F1FA2E912B5F63E200F094BF /* Preview Content */,
 				F1FA2EBB2B5F645F00F094BF /* Meal.swift */,
 				F1FA2EBD2B5F647900F094BF /* NetworkingManager.swift */,
 				F1FA2EBF2B5F649300F094BF /* DetailedRecipeView.swift */,
 				F1FA2EC12B5F64A800F094BF /* RecipeHome.swift */,
+				F1FA2E8F2B5F63E200F094BF /* Assets.xcassets */,
+				F1FA2E912B5F63E200F094BF /* Preview Content */,
 			);
 			path = RecipeFetch;
 			sourceTree = "<group>";

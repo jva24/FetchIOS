@@ -16,12 +16,6 @@ class NetworkingManager: ObservableObject{
     let dessertURL: String = "https://themealdb.com/api/json/v1/1/filter.php?c=Dessert"
     let idURL: String = "https://themealdb.com/api/json/v1/1/lookup.php?i="
     
-//    var type: Int
-//
-//    init(type: Int) {
-//        self.type = type
-//    }
-    
     func fetchDessertData(){
         let url = dessertURL
         let decoder = JSONDecoder()

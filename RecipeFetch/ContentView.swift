@@ -31,13 +31,6 @@ struct ContentView: View {
         NavigationStack {
             VStack {
                 
-//                HStack {
-//                    FilterButton(title: "Recipe", activeFilter: $activeFilter, filterType: .recipe, text: $recipe)
-//                    FilterButton(title: "Area", activeFilter: $activeFilter, filterType: .area, text: $area)
-//                    FilterButton(title: "Ingredient", activeFilter: $activeFilter, filterType: .ingredient, text: $ingredient)
-//                    FilterButton(title: "Category", activeFilter: $activeFilter, filterType: .category, text: $category)
-//                }
-                
                 Spacer()
         
                 Text("Click A Recipe:")
@@ -63,7 +56,6 @@ struct ContentView: View {
                     }
                     .onAppear(perform: {
                         networking.fetchDessertData()
-//                        networking.fetchIdData(idMeal: \.idMeal)
                     })
                 }
                 .padding()
@@ -72,45 +64,7 @@ struct ContentView: View {
         }
     }
 }
-
-
-//// Button View Struct that shows Textfield for each Button
-//struct FilterButton: View {
-//    var title: String
-//// Active variable that toggles if the the button is clicked
-//    @Binding  var activeFilter: ContentView.FilterType?
-//    var filterType: ContentView.FilterType
-//    @Binding var text: String
-//
-//    var body: some View {
-//        VStack {
-//// Button created with action that confirms if the activeFilter clicked         matches the filterType cases
-//            Button(action: {
-//                activeFilter = (activeFilter == filterType) ? nil : filterType
-//            }) {
-////                Sets up the actual Button Title, font and button shape
-//                Text(title)
-//                    .font(.subheadline)
-//                    .fontWeight(.bold)
-//                    .foregroundColor(.white)
-//                    .padding(EdgeInsets(top: 12, leading: 16, bottom: 12, trailing: 16))
-//                    .background(Color(UIColor(red: 0/255, green: 0/255, blue: 128/255, alpha: 1.0)))
-//                    .clipShape(RoundedRectangle(cornerRadius: 15))
-//            }
-////  Conditional for if the filter types match the activeFilter variable if it does than a textfield appears.
-//            if activeFilter == filterType {
-//                TextField("Type \(title) Filter", text: $text)
-//                    .textFieldStyle(RoundedBorderTextFieldStyle())
-//                    .padding()
-//                    .background(Color(UIColor(red: 0/255, green: 0/255, blue: 128/255, alpha: 1.0)))
-//                    .clipShape(RoundedRectangle(cornerRadius: 15))
-//            }
-//        }
-//    }
-//}
     
-
-
 #Preview {
    RecipeHome()
 }
